@@ -20,10 +20,10 @@
         <h6>
           <% if logged_in? %>
             <%= "Logged in as #{current_user.email}" %>
+            <%= link_to "(logout)", logout_path %>
           <% else %>
             <%= link_to "(login)", login_path %>
           <% end %>
-          <%= link_to "Create an Account", new_author_path %>
         </h6>
       </div>
     </div>
